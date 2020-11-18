@@ -1,0 +1,43 @@
+﻿1. npm i gulp-cli -g
+������������� ������ �� ����� �������
+
+2. npm init
+������������� ������ ������� (������ ��� � �.�.)
+
+3. npm i gulp --save-dev
+����, ������� ����������� ������ ����� � package.json, 
+����� � ���������� � ����� ����� ���� ������ ����� ����
+�����
+
+4. npm install node-sass gulp-sass --save-dev
+������������� ������� � ����������� �� ������
+
+5. gulp scss
+��� ����������� � ������� .css � ��� ��������, �����
+����������� �������� � gulpfile.js
+
+6. gulp watch 
+��������� �������������� ����� �����������, �����
+���� ��� ��������� gulp.task � gulpfile.js
+
+7. npm install browser-sync gulp --save-dev
+browser sync - ������, ������� ��������� ������������ 
+�������������� ��������, ��� ��������� ����. �������������
+https://www.browsersync.io/docs/gulp
+
+Ctrl+C �������� ���������� ���������� watch
+
+8. npm i normalize.css slick-carousel magnific-popup
+������������� ��� ������� ��� ������
+
+9. ��� ������������� css ����� ���������� � ���� ����� 
+@import
+
+10. npm i gulp-uglify gulp-concat --save-dev
+uglify - ������ ��� �����������
+concat - ������ ��� ������������
+
+11. i del --save-dev
+после того как папка билдится, делать удаление ее из dist, если она удаляется из app
+
+

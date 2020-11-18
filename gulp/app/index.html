@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>testAlefDevelopment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <div class="header__topContent">
+                <div class="header__topContent-blockNavigation">
+                    <div class="header__topContent-blockNavigation-logo">
+                        <img id="logo" src="img/header-logo.svg" alt="header-logo">
+                    </div>
+                    <div id="adaptiveMenu" class="header__topContent-blockNavigation-menuAdaptivity">
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="menu"></div>
+                        <div class="header__topContent-blockNavigation-nav">
+                            <a href="#">Main</a>
+                            <a href="#">Gallery</a>
+                            <a href="#">News</a>
+                            <a href="#">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__topContent-contacts">
+                    <a href="tel:+544349000000">+544 3490 00000</a>
+                    <span>Звони скорее!</span>
+                </div>
+            </div>
+            <div class="header__underContent">
+                Найдено 349 котов
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="productList">
+        <div class="productList__inner container">
+            <div class="productList__title">
+                <span class="productList__titleSort">Сортировать по:</span>
+                <div id="priceSort" class="productList__title-price">
+                    <span class="productList__title-priceLink">Цене</span>
+                    <ul>
+                        <li id="increment">по возрастанию</li>
+                        <li id="decrease">по убыванию</li>
+                    </ul>
+                </div>
+                <div  id="ageSort" class="productList__title-age">
+                    <span class="productList__title-ageLink">Возрасту</span>
+                    <ul>
+                        <li id="increment">по возрастанию</li>
+                        <li id="decrease">по убыванию</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div id="sortBlocks" class="productList__items">
+                <div class="productList__items-block" data-price="30" data-age="2">
+                    <div class="productList__items-block-item block-1">
+                        <div class="productList__items-block-itemDiscount">-40%</div>
+                        <img src="img/productList-LikeOff.svg" alt="likeOff">
+                    </div>
+                    <div class="productList__items-block-content">
+                        <div class="productList__items-block-contentTitle">
+                            Кот полосатый
+                        </div>
+                        <div class="productList__items-block-contentMain">
+                            <div class="productList__items-block-contentMainBorder"></div>
+                            <div class="productList__items-block-contentMainColor">Коричневый окрас</div>
+                            <div class="productList__items-block-contentMainAge">
+                                <div class="productList__items-block-contentMainAgeItem">2 мес.</div>
+                                <span>Возраст</span>
+                            </div>
+                            <div class="productList__items-block-contentMainPaws">
+                                <div class="productList__items-block-contentMainPawsItem">4</div>
+                                <span>Кол-во лап</span>
+                            </div>
+                        </div>
+                        <div class="productList__items-block-contentPrice">30 000 руб.</div>
+                    </div>
+                    <div class="productList__items-blockBuy">
+                        <a href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="productList__items-block" data-price="40" data-age="2">
+                    <div class="productList__items-block-item block-2">
+                        <div class="productList__items-block-itemDiscount itemDiscountOff"></div>
+                        <img src="img/productList-LikeOn.svg" alt="likeOn">
+                    </div>
+                    <div class="productList__items-block-content">
+                        <div class="productList__items-block-contentTitle">
+                            Кот полосатый
+                        </div>
+                        <div class="productList__items-block-contentMain">
+                            <div class="productList__items-block-contentMainBorder"></div>
+                            <div class="productList__items-block-contentMainColor">Коричневый окрас</div>
+                            <div class="productList__items-block-contentMainAge">
+                                <div class="productList__items-block-contentMainAgeItem">2 мес.</div>
+                                <span>Возраст</span>
+                            </div>
+                            <div class="productList__items-block-contentMainPaws">
+                                <div class="productList__items-block-contentMainPawsItem">4</div>
+                                <span>Кол-во лап</span>
+                            </div>
+                        </div>
+                        <div class="productList__items-block-contentPrice">40 000 руб.</div>
+                    </div>
+                    <div class="productList__items-blockBuy blockBuySlod">
+                        <a href="#">Продан</a>
+                    </div>
+                </div>
+                <div class="productList__items-block" data-price="20" data-age="2">
+                    <div class="productList__items-block-item block-3">
+                        <div class="productList__items-block-itemDiscount itemDiscountOff"></div>
+                        <img src="img/productList-LikeOff.svg" alt="likeOff">
+                    </div>
+                    <div class="productList__items-block-content">
+                        <div class="productList__items-block-contentTitle">
+                            Кот полосатый
+                        </div>
+                        <div class="productList__items-block-contentMain">
+                            <div class="productList__items-block-contentMainBorder"></div>
+                            <div class="productList__items-block-contentMainColor">Коричневый окрас</div>
+                            <div class="productList__items-block-contentMainAge">
+                                <div class="productList__items-block-contentMainAgeItem">2 мес.</div>
+                                <span>Возраст</span>
+                            </div>
+                            <div class="productList__items-block-contentMainPaws">
+                                <div class="productList__items-block-contentMainPawsItem">4</div>
+                                <span>Кол-во лап</span>
+                            </div>
+                        </div>
+                        <div class="productList__items-block-contentPrice">20 000 руб.</div>
+                    </div>
+                    <div class="productList__items-blockBuy">
+                        <a href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="productList__items-block" data-price="25" data-age="2">
+                    <div class="productList__items-block-item block-1">
+                        <div class="productList__items-block-itemDiscount itemDiscountOff"></div>
+                        <img src="img/productList-LikeOff.svg" alt="likeOff">
+                    </div>
+                    <div class="productList__items-block-content">
+                        <div class="productList__items-block-contentTitle">
+                            Кот полосатый
+                        </div>
+                        <div class="productList__items-block-contentMain">
+                            <div class="productList__items-block-contentMainBorder"></div>
+                            <div class="productList__items-block-contentMainColor">Коричневый окрас</div>
+                            <div class="productList__items-block-contentMainAge">
+                                <div class="productList__items-block-contentMainAgeItem">2 мес.</div>
+                                <span>Возраст</span>
+                            </div>
+                            <div class="productList__items-block-contentMainPaws">
+                                <div class="productList__items-block-contentMainPawsItem">4</div>
+                                <span>Кол-во лап</span>
+                            </div>
+                        </div>
+                        <div class="productList__items-block-contentPrice">25 000 руб.</div>
+                    </div>
+                    <div class="productList__items-blockBuy">
+                        <a href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="productList__items-block" data-price="30" data-age="2">
+                    <div class="productList__items-block-item block-23">
+                        <div class="productList__items-block-itemDiscount">-40%</div>
+                        <img src="img/productList-LikeOff.svg" alt="likeOff">
+                    </div>
+                    <div class="productList__items-block-content">
+                        <div class="productList__items-block-contentTitle">
+                            Кот полосатый
+                        </div>
+                        <div class="productList__items-block-contentMain">
+                            <div class="productList__items-block-contentMainBorder"></div>
+                            <div class="productList__items-block-contentMainColor">Коричневый окрас</div>
+                            <div class="productList__items-block-contentMainAge">
+                                <div class="productList__items-block-contentMainAgeItem">2 мес.</div>
+                                <span>Возраст</span>
+                            </div>
+                            <div class="productList__items-block-contentMainPaws">
+                                <div class="productList__items-block-contentMainPawsItem">4</div>
+                                <span>Кол-во лап</span>
+                            </div>
+                        </div>
+                        <div class="productList__items-block-contentPrice">30 000 руб.</div>
+                    </div>
+                    <div class="productList__items-blockBuy">
+                        <a href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="productList__items-block" data-price="10" data-age="2">
+                    <div class="productList__items-block-item block-32">
+                        <div class="productList__items-block-itemDiscount itemDiscountOff"></div>
+                        <img src="img/productList-LikeOn.svg" alt="likeOn">
+                    </div>
+                    <div class="productList__items-block-content">
+                        <div class="productList__items-block-contentTitle">
+                            Кот полосатый
+                        </div>
+                        <div class="productList__items-block-contentMain">
+                            <div class="productList__items-block-contentMainBorder"></div>
+                            <div class="productList__items-block-contentMainColor">Коричневый окрас</div>
+                            <div class="productList__items-block-contentMainAge">
+                                <div class="productList__items-block-contentMainAgeItem">2 мес.</div>
+                                <span>Возраст</span>
+                            </div>
+                            <div class="productList__items-block-contentMainPaws">
+                                <div class="productList__items-block-contentMainPawsItem">4</div>
+                                <span>Кол-во лап</span>
+                            </div>
+                        </div>
+                        <div class="productList__items-block-contentPrice">10 000 руб.</div>
+                    </div>
+                    <div class="productList__items-blockBuy  blockBuySlod">
+                        <a href="#">Продан</a>
+                    </div>
+                </div>
+            </div>
+            <div class="productList__addItems">
+                <a href="#">Показать еще 20</a>
+                <img id="scrollUp" class="productList__addItems-scrollLink" src="img/shevronUp.svg" alt="shevronUp">
+            </div>
+        </div> 
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__content">
+                <div class="footer__content-title">Успей купить!</div>
+                <div class="footer__content-subtitle">Подпишись и успей словить все акции</div>
+            </div>
+            <div class="footer__form">
+                <div class="footer__form-input">
+                    <input type="email" placeholder="Email">
+                    <a href="#">Подписаться</a>
+                </div>
+                <div class="footer__form-inputCheckbox">
+                    <input class="footer__form-inputCheckboxInput" type="checkbox">
+                    <span>Подписаться на новости</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

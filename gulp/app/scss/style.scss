@@ -1,0 +1,392 @@
+@import "vars"; 
+@import "libs"; 
+@import "fonts"; 
+@import "global"; 
+
+
+header {
+    background-image: url('../img/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header__topContent {
+    display: flex;
+    justify-content: space-between;
+    &-blockNavigation {
+        margin-top: 26px;
+        display: flex;
+        align-items: center;
+        &-logo {
+            margin-right: 123px;
+        }
+        &-nav{
+            margin-top: -7px;
+            a {
+                margin-right: 60px;
+            }
+        }
+    }
+    &-contacts {
+        margin-top: 49px;
+        display: flex;
+        flex-direction: column;
+        a {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29.29px;
+        }
+        span {
+            margin-top: 3px;
+            text-align: right;
+        }
+    }
+}
+
+.header__underContent {
+    margin-top: 34px;
+    padding-bottom: 66px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46.32px;
+}
+
+
+
+
+
+
+.productList__inner {
+    margin-top: 37px;
+}
+
+.productList__title {
+    display: flex;
+    margin-bottom: 38px;
+    img {
+        vertical-align: middle;
+    }
+    &Sort {
+        font-weight: 700;
+        margin-right: 48px;
+    }
+    &-price {
+        margin-right: 55px;
+        cursor: pointer;
+        span {
+            &:after {
+                content: url('../img/shevronDown.svg');
+                margin-left: 15px;
+            }
+        }
+        ul {
+            display: none;
+        }
+        &.open {
+            ul {
+                display: block;
+                position: absolute;
+                background-color: $black;
+                opacity: 0.8;
+                margin-top: 5px;
+                li {
+                    color: #ffffff;
+                    padding: 6px;
+                    &:hover {
+                        color: $blue;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+    &-age {
+        cursor: pointer;
+        span {
+            &:after {
+                content: url('../img/shevronDown.svg');
+                margin-left: 25px;
+            }
+        }
+        ul {
+            display: none;
+        }
+        &.open {
+            ul {
+                display: block;
+                position: absolute;
+                background-color: $black;
+                opacity: 0.8;
+                margin-top: 5px;
+                li {
+                    color: #ffffff;
+                    padding: 6px;
+                    &:hover {
+                        color: $blue;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.productList__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productList__items-block {
+    width: 380px;
+    margin-bottom: 27px;
+    &-content {
+        padding-left: 29px;
+        background-color: #F3F3F3;
+        &Title {
+            padding: 28px 0 24px 0;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29.26px;
+        }
+        &Main {
+            display: flex;
+            width: 300px;
+            justify-content: space-between;
+            &Border {
+                width: 4px;
+                height: 26px;
+                background-color: $blue;
+            }
+            &Color {
+                margin-left: -30px;
+                width: 89px;
+                font-size: 12px;
+                line-height: 14.63px;
+            }
+            &Age {
+                margin-left: -30px;
+                span {
+                    margin-top: -10px;
+                    font-size: 12px;
+                    line-height: 14.63px;
+                }
+                &Item {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19.5px;
+                }
+            }
+            &Paws {
+                span {
+                    font-size: 12px;
+                    line-height: 14.63px;
+                }
+                &Item {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19.5px;
+                }
+            }
+        }
+    }
+    &-item {
+        background-image: url('../img/productList-bg-1.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 34px 32px 184px 38px;
+        display: flex;
+        justify-content: space-between;
+        &Discount {
+            padding: 13px 18px;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 19.5px;
+            background-color: #E62D2D;
+            border-radius: 10px;
+        }
+    }
+    &-contentPrice {
+        margin-top: 12px;
+        padding-bottom: 29px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29.26px;
+    }
+    &Buy {
+        text-align: center;
+        padding: 21px 0;
+        background-color: $blue;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        &:hover {
+            cursor: pointer;
+            transition: 1s;
+            background-color: $black;
+        }
+        a {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19.5px;
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.blockBuySlod {
+    background-color: $black;
+}
+
+.itemDiscountOff {
+    background-color: transparent;
+}
+
+.block-2 {
+    background-image: url('../img/productList-bg-2.png');
+}
+
+.block-3 {
+    background-image: url('../img/productList-bg-3.png');
+}
+
+.block-23 {
+    background-image: url('../img/productList-bg-3.png');
+}
+
+.block-32 {
+    background-image: url('../img/productList-bg-2.png');
+}
+
+.productList__addItems {
+    text-align: center;
+    margin-top: 41px;
+    margin-bottom: 83px;
+    a {
+        border: 1px solid #CACACA;
+        border-radius: 10px;
+        color: #000000;
+        font-size: 14px;
+        line-height: 17.07px;
+        padding: 24px 129px;
+    }
+    &-scrollLink {
+        cursor: pointer;
+        position: fixed;
+        background-color: $blue;
+        padding: 20px;
+        left: 1330px;
+        top: 1072px;
+    }
+}
+
+
+
+
+.footer {
+    margin-bottom: 114px;
+    &__inner {
+        padding: 91px 80px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #1F2021;  
+    }
+    &__content {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        &-title {
+            margin-top: -5px;
+            margin-bottom: 11px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58.51px;
+        }
+        &-subtitle {
+            margin-top: 15px;
+            font-size: 28px;
+            line-height: 25.54px;
+        }
+    }
+    &__form {
+        margin-top: -25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-input {
+            display: flex;
+            input {
+                width: 300px;
+                padding: 22px 33px 26px 33px;
+                border-radius: 10px;
+                font-size: 14px;
+                line-height: 17.07px;
+                margin-right: 16PX;
+            }
+            a {
+                width: 250px;
+                padding: 22px 0 26px 0;
+                background-color: $blue;
+                border-radius: 10px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17.07px;
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+            &Checkbox {
+                display: flex;
+                align-items: center;
+                margin-top: 25px;
+                input {
+                    margin-right: 22px;
+                    width: 18px;
+                    height: 18px;
+                    color: $blue;
+                }
+                span {
+                    font-size: 14px;
+                    line-height: 17.07px;
+                }
+            }
+        }
+    }
+}
+
+.menu {
+    position: relative;
+    display: none;
+    margin: 5px 0; 
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.header__topContent-blockNavigation-nav.open {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: $black;
+    padding: 10px;
+    a {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media"; 
